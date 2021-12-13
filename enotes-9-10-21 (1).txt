@@ -1,0 +1,150 @@
+Virtual Box  /  Vmware   ( Virtualization tools -> provide us hypersior)
+Centos Linux installation 
+
+	0   	-->  root
+	1-999   -->  Process range (list)
+	1000 - 65K ->  Local User ID range 
+------------------------------------------------
+Shell :     Interpreter CLI ( tty )
+			GUI ( pts )
+	
+	get input from User on consol and 
+	process output on screen.
+1)
+
+
+------------------------------------------------
+1)  id
+2)  whoami
+3)  man
+4)  clear
+5)  cd
+	cd  .
+	cd ..
+6)  ls
+	ls  -l 
+	ls  -ltr 
+	ls  -la 
+	ls  -ld  (will be discuss today)
+	 	 index node table sturcture
+	ls  -il 
+	ls  -ild  te/
+
+16797766 drwxr-xr-x     2      root       root      6               Oct 9 18:36     te
+ inode	   permission   .     Owner    Group name  File/Dir Size   Date & Time     File/Dir Name
+  no        bit		..
+			(Sym Links)
+
+
+7)   date
+8)   cal
+	cal 2022
+9)   pwd
+10)  init
+		init  0 (Shutdown)
+		init  6 (Reboot)
+11) history
+12) cat
+	- View file content
+	- We can create new file with content
+
+	>     -->  STDOUT
+	<     --> STDINPUT Operator
+	>>    --> heredoc (Append)
+
+Ex:  
+		cat  >   rajasthan.txt
+		  dflkdklgdnekl gndk jnd kjdnb kjdn bkd
+		  dfgdkgldn
+		
+		ctrl d   	
+
+		ls  -l 
+		
+		cat  rajasthan.txt
+
+
+12.1)  clear  or  ctrl  l
+
+---------------------------------------------------------------------
+					09-10-21
+13)  touch
+14)  mkdir
+15)  useradd
+16)  passwd
+17)  su   -  <USER-NAME>
+17.1)  exit
+	
+18)  Configure Network interface for Centos Linux Server
+
+	 View File
+		cat  /etc/sysconfig/network-scripts/ifcfg-enp0s3
+
+         Edit File
+		vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+		
+			press  i
+		change 
+			ONBOOT=no 
+			   to
+			ONBOOT=yes
+
+		save and exit from Network configuration file
+		
+		esc
+			:wq!
+		
+18.1)  systemctl  restart  network
+18.2)  systemctl  enable   network				
+
+18.3)  nmcli 
+       ifconfig
+       ip addr
+18.4)  Download  Putty
+	   or 
+	MobaXtream 
+------------------------------------------------------------------------
+19)  chmod 
+20)  chown
+21)  groupadd
+22)  chgrp
+23)  nmcli
+24)  ip addr
+25)  ethtool  <IFACE>
+26)  df  -hT
+27)  free  -hg 
+28)  df  -hs  *
+29)  top 
+30)  htop
+31)  grep
+32)  w
+33)  ps -aux
+34)  kill
+35)  pkill
+36)  wget	  
+37)  curl
+38)  tcpdump   /  wireshark
+39)  hostname
+40)  hostnamectl  set-hostname 
+41)  tty
+42)  ln   
+	hard Link 
+	soft link 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
